@@ -1,0 +1,72 @@
+
+.class{
+	text-decoration: line-through;
+	color:gray;
+}
+body{
+	font-family: roboto;
+	background: #076585;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#container{/*to apply styles for container id in html document*/
+	width:360px;
+	margin: 0 auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	background-color: #f7f7f7;
+}
+h1{/*styles for heading element*/
+	background-color: #2980b9;
+	color:white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	text-transform: uppercase;
+	}
+input{/*styles for input field, box size fitting color, height, padding*/
+	background-color: :#f7f7f7;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 18px;
+	padding: 13px 13px 13px 13px;
+	border:3px, solid rgba(0,0,0,0);
+}
+input:focus{/*input element selected for focusing these style when it enters*/
+	background-color: #fff;
+	border:0px solid #2980b9;
+	outline:none;
+}
+span{/*here this span mentioned for trash icon and that transparency, to apply styles*/
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color:white;
+	width:0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+ul{/*to remove bullet points*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li{/*styles for list*/
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	color:#666;
+
+}
+li:nth-child(2n){/*to add bgcolor for 2n elements in the lists*/
+	background-color: #f8f8f8;
+}
+li:hover span{/*apply styles when mouse over them*/
+	width: 40px;
+	opacity: 1.0;
+}
+.fa-plus{/*to float right side this plus icon*/
+	float: right;
+}
